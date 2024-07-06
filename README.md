@@ -17,10 +17,16 @@ VSCode 本体のインストール：
 <br/>
 
 拡張機能のインストール：
-* Japanese Language Pack for Visual Studio Code
-    日本語化のため
-* WSL
-    WSL 環境に接続するため
+* Japanese Language Pack for Visual Studio Code（日本語化のため）
+* WSL（WSL 環境に接続するため）
+
+## 3. Git for Windows
+実質的に、Git Credential Manager（GCM,Git資格情報マネージャー）を使うためだけに、Windows側にGitを入れる
+WSL Ubuntuに直接GCMをインストールすることもできるが、Microsoft公式で推奨しているGit for Windowsを使う方式を採用
+### 3.1. ダウンロード
+* Git公式サイトから、64-bit Git for Windows Setupをダウンロード
+
+### 3.2. インストールウィザード
 
 
 ## 1. Dockerのインストール
