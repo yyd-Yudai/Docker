@@ -41,8 +41,6 @@ WSL Ubuntu に直接 GCM をインストールすることもできるが、Micr
     
   * Add a Git Bash Profile to Windows Terminal : ON（推奨）  
     Windows Terminal に Git Bash を追加してくれる
-    <br/>
-<br/>
 
 * Choosing the default editor used by Git  
   Git のデフォルトエディタを選択
@@ -50,16 +48,12 @@ WSL Ubuntu に直接 GCM をインストールすることもできるが、Micr
   
   * Use Visual Studio Code as Git's default editor  
     VSCode をデフォルトエディタとして選択
-    <br/>
-<br/>
 
 * Adjusting the name of the initial branch in new repository  
   git init で新しいリポジトリ作成時の初期ブランチ名について
   <br/>
   
   * 新しいリポジトリのデフォルトブランチ名を 'main' にする
-    <br/>
-<br/>
 
 * Adjusting your PATH environment  
   PATH 環境について
@@ -68,15 +62,12 @@ WSL Ubuntu に直接 GCM をインストールすることもできるが、Micr
   * Git from the command line and also from 3rd-party software  
     推奨。PATH に最小限の Git ラッパーだけを追加  
     Git Bash、コマンドプロンプト、Windows PowerShell などから Git を使えるようにする
-    <br/>
-<br/>
 
 * Choosing the SSH executable
   <br/>
   
   * Use bundled OpenSSH  
     Git に付属の ssh.exe を使用
-<br/>
 
 * Choosing HTTPS transport backend  
   Git の HTTPS 接続に使う SSL/TLS ライブラリ
@@ -84,7 +75,6 @@ WSL Ubuntu に直接 GCM をインストールすることもできるが、Micr
   
   * Use the Open SSL library  
     サーバ証明書は、ca-bundle.crt ファイルを使って認証
-<br/>
 
 * Configuring the line ending conversations  
   改行文字の設定
@@ -93,7 +83,6 @@ WSL Ubuntu に直接 GCM をインストールすることもできるが、Micr
   * Checkout as-is, commit as-is  
     テキストファイルのチェックアウトやコミットの際に、改行文字の変換を行わない  
     "core.autocrlf false" の設定
-<br/>
 
 * Configuring the terminal emulator to use with Git Bash  
   Git Bash で使う端末エミュレータの設定
@@ -101,7 +90,6 @@ WSL Ubuntu に直接 GCM をインストールすることもできるが、Micr
   
   * Use MinTTY (the default terminal of MSYS2)  
     MinTTY（MSYS2 のデフォルト端末）を使う
-<br/>
 
 * Choose the default behavior of 'git pull'  
   'git pull' のデフォルトの動作を選択する
@@ -110,7 +98,6 @@ WSL Ubuntu に直接 GCM をインストールすることもできるが、Micr
   * Only ever fast-forward  
     Fast-forward のみ  
     これは 'git pull' の標準的な動作
-<br/>
 
 * Choose a credential helper  
   資格情報ヘルパーの選択
@@ -118,7 +105,6 @@ WSL Ubuntu に直接 GCM をインストールすることもできるが、Micr
   
   * [Git Credential Manager](https://docs.github.com/ja/get-started/getting-started-with-git/caching-your-github-credentials-in-git)  
     Git 資格情報マネージャー
-<br/>
 
 * Configuring extra options  
   追加オプションの設定
