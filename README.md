@@ -9,7 +9,11 @@
 
 ## 2. Visual Studio Code
 VSCode 本体のインストール：
-* これは普通のテキストです。<a href="https://example.com" style="text-decoration: underline;">ここをクリック</a>すると外部リンクに飛びます。
+* [Visual Studio Code](https://code.visualstudio.com/) 公式サイトからインストーラをダウンロード
+* VSCode のインストール
+* * オプションはデフォルトのまま
+* VSCode をスタートやタスクバーにピン留め（任意）
+* （Microsoft Store から入手でも可）
 
 ## 1. Dockerのインストール
 ## 2. .devcontainer上に'devcontainer.json', 'Dockerfile', 'requirements.txt'を用意する
