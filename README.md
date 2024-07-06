@@ -17,7 +17,10 @@ VSCode 本体のインストール：
 <br/>
 
 拡張機能のインストール：
-
+* Japanese Language Pack for Visual Studio Code
+    日本語化のため
+* WSL
+  WSL 環境に接続するため
 
 
 ## 1. Dockerのインストール
