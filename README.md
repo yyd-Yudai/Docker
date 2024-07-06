@@ -1,4 +1,4 @@
-# Windows11 + WSL + Ubuntu + VSCode + Git + Github + Docker で開発環境構築
+# Windows11 + WSL + Ubuntu + VSCode + Git + GitHub + Docker で開発環境構築
 参考資料
 * <https://www.youtube.com/watch?v=2l_nSudnKs4>
 * <https://www.youtube.com/watch?v=6kCZJLZBVpQ>
@@ -21,7 +21,7 @@ VSCode 本体のインストール：
 * WSL（WSL 環境に接続するため）
 
 ## 3. Git for Windows
-実質的に [Git Credential Manager](https://docs.github.com/ja/get-started/getting-started-with-git/caching-your-github-credentials-in-git)（GCM，Git 資格情報マネージャー）を使うためだけに、Windows 側に Git を入れる
+実質的に [Git Credential Manager](https://docs.github.com/ja/get-started/getting-started-with-git/caching-your-github-credentials-in-git)（GCM，Git 資格情報マネージャ）を使うためだけに、Windows 側に Git を入れる
 <br/>
 
 WSL Ubuntu に直接 GCM をインストールすることもできるが、Microsoft 公式で推奨している Git for Windows を使う方式を採用
@@ -104,7 +104,7 @@ WSL Ubuntu に直接 GCM をインストールすることもできるが、Micr
   <br/>
   
   * [Git Credential Manager](https://docs.github.com/ja/get-started/getting-started-with-git/caching-your-github-credentials-in-git)  
-    Git 資格情報マネージャー
+    Git 資格情報マネージャ
 
 * Configuring extra options  
   追加オプションの設定
@@ -120,9 +120,8 @@ Git 環境の設定を行う
 参考：[Git - 最初の Git の構成](https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E6%9C%80%E5%88%9D%E3%81%AEGit%E3%81%AE%E6%A7%8B%E6%88%90)
 <br/>
 
-* 'C:\Users{username}.gitconfig' ファイルを作成
+* 'C:\Users{username}.gitconfig' ファイルを作成  
   ※ Git のインストールで、エディタの指定のために自動で '.gitconfig' ファイルは作成されている
-<br/>
 
 * 設定を記入
 * Git ユーザ名：'{username}' を自分の Git ユーザ名に変更
@@ -188,7 +187,7 @@ sudo apt update && sudo apt upgrade
 lsb_release -a
 ```
 
-### 5.4. Git インストール
+### 5.3. Git インストール
 ```
 # できるだけ新しいバージョンの Git にするため、 ppa を設定
 sudo add-apt-repository ppa:git-core/ppa
@@ -196,11 +195,9 @@ sudo add-apt-repository ppa:git-core/ppa
 # Git を更新
 sudo apt update; sudo apt install git
 ```
-<br/>
-
 参考：[Git - Download for Linux and Unix](https://git-scm.com/download/linux)
 
-### 5.5. Git Credential Manager
+### 5.4. Git Credential Manager
 Git for Windows の Git Credential Manager で、資格情報を登録できるようにされている
 <br/>
 
@@ -208,6 +205,50 @@ WSL と Windows ホストの間で資格情報と設定を共有するために�
 <br/>
 
 '.gitconfig' は、Windows と WSL 内で引継ぎは行われないので、WSL Ubuntu のホームに '.gitconfig' ファイルを作成し、設定を書く
+
+* '/home/{username}/.gitconfig' ファイルを作成
+* 設定を記入
+* Git ユーザ名：'{username}' を自分の Git ユーザ名に変更
+* コミットメールアドレス：'{email}' を自分のメールアドレスに変更
+```
+[user]
+    name = {username}
+    email = {email}
+[pull]
+    ff = only
+    rebase = false
+[core]
+    eol = lf
+    ignorecase = false
+    quotepath = false
+[init]
+    defaultBranch = main
+[fetch]
+    prune = true
+[rebase]
+    autosquash = true
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
+```
+参考：[WSL で Git の使用を開始する | Microsoft Learn](https://learn.microsoft.com/ja-jp/windows/wsl/tutorials/wsl-git)
+
+## 6. GitHub
+
+### 6.1. Git 資格情報を登録
+* 既定のブラウザで GitHub にサインインした状態にする
+* 'git clone' などのコマンドで GitHub に接続  
+  GitHub のリポジトリに初めて接続したとき、Git Credential Manager による認証が行われる
+* ブラウザで認証する
+* Windows 資格情報マネージャで確認
+
+### 6.2. GitHub アカウントで VSCode の設定を同期（任意）
+GitHub アカウントを使って VSCode の設定を他の PC と同期する  
+設定はクラウドに保存されるため、バックアップとしても使える
+
+* VSCode 左下のアイコンから「サインインして設定を同期する」を選択
+* 同期したい設定を選択
+* 同期したアカウントを選択 -> GitHub
+
 
 
 
