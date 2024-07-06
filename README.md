@@ -21,12 +21,26 @@ VSCode 本体のインストール：
 * WSL（WSL 環境に接続するため）
 
 ## 3. Git for Windows
-実質的に、Git Credential Manager（GCM,Git資格情報マネージャー）を使うためだけに、Windows側にGitを入れる
-WSL Ubuntuに直接GCMをインストールすることもできるが、Microsoft公式で推奨しているGit for Windowsを使う方式を採用
+実質的に [Git Credential Manager](https://docs.github.com/ja/get-started/getting-started-with-git/caching-your-github-credentials-in-git)（GCM，Git 資格情報マネージャー）を使うためだけに、Windows 側に Git を入れる
+<br/>
+
+WSL Ubuntu に直接 GCM をインストールすることもできるが、Microsoft 公式で推奨している Git for Windows を使う方式を採用
+
 ### 3.1. ダウンロード
-* Git公式サイトから、64-bit Git for Windows Setupをダウンロード
+* [Git](https://git-scm.com/download/win) 公式サイトから [64-bit Git for Windows Setup](https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe) をダウンロード
 
 ### 3.2. インストールウィザード
+* Select Components
+  * Windows Explorer integration : OFF（任意）
+    右クリックのコンテキストメニューに追加される
+  * Check dialy for Git for Windows updates : ON（推奨）
+  * Add a Git Bash Profile to Windows Terminal : ON（推奨）
+<br/>
+* Choosing the default editor used by Git
+  * 
+
+
+
 
 
 ## 1. Dockerのインストール
