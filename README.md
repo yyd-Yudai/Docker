@@ -35,9 +35,11 @@ WSL Ubuntu に直接 GCM をインストールすることもできるが、Micr
   * Windows Explorer integration : OFF（任意）  
     右クリックのコンテキストメニューに追加される
     <br/>
+    
   * Check dialy for Git for Windows updates : ON（推奨）
     勝手にアップデートしてくれる設定
     <br/>
+    
   * Add a Git Bash Profile to Windows Terminal : ON（推奨）
     Windows Terminal に Git Bash を追加してくれる
     <br/>
