@@ -31,13 +31,34 @@ WSL Ubuntu に直接 GCM をインストールすることもできるが、Micr
 
 ### 3.2. インストールウィザード
 * Select Components
+  <br/>
   * Windows Explorer integration : OFF（任意）  
     右クリックのコンテキストメニューに追加される
+    <br/>
   * Check dialy for Git for Windows updates : ON（推奨）
+    勝手にアップデートしてくれる設定
+    <br/>
   * Add a Git Bash Profile to Windows Terminal : ON（推奨）
-<br/>
+    Windows Terminal に Git Bash を追加してくれる
+    <br/>
+
 * Choosing the default editor used by Git
-  * 
+  Git のデフォルトエディタを選択
+  <br/>
+  * Use Visual Studio Code as Git's default editor
+    VSCode をデフォルトエディタとして選択
+    <br/>
+
+* Adjusting the name of the initial branch in new repository
+  git init で新しいリポジトリ作成時の初期ブランチ名について
+  <br/>
+  * 新しいリポジトリのデフォルトブランチ名を 'main' にする
+    <br/>
+
+* Adjusting your PATH environment
+  PATH 環境について
+  <br/>
+  
 
 
 
