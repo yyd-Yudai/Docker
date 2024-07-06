@@ -31,7 +31,6 @@ WSL Ubuntu に直接 GCM をインストールすることもできるが、Micr
 
 ### 3.2. インストールウィザード
 * Select Components
-  <br/>
   * Windows Explorer integration : OFF（任意）  
     右クリックのコンテキストメニューに追加される
     <br/>
@@ -43,28 +42,79 @@ WSL Ubuntu に直接 GCM をインストールすることもできるが、Micr
   * Add a Git Bash Profile to Windows Terminal : ON（推奨）  
     Windows Terminal に Git Bash を追加してくれる
     <br/>
+<br/>
 
-* Choosing the default editor used by Git
+* Choosing the default editor used by Git  
   Git のデフォルトエディタを選択
   <br/>
-  * Use Visual Studio Code as Git's default editor
+  * Use Visual Studio Code as Git's default editor  
     VSCode をデフォルトエディタとして選択
     <br/>
+<br/>
 
-* Adjusting the name of the initial branch in new repository
+* Adjusting the name of the initial branch in new repository  
   git init で新しいリポジトリ作成時の初期ブランチ名について
   <br/>
   * 新しいリポジトリのデフォルトブランチ名を 'main' にする
     <br/>
+<br/>
 
-* Adjusting your PATH environment
+* Adjusting your PATH environment  
   PATH 環境について
   <br/>
-  
+  * Git from the command line and also from 3rd-party software  
+    推奨。PATH に最小限の Git ラッパーだけを追加  
+    Git Bash、コマンドプロンプト、Windows PowerShell などから Git を使えるようにする
+    <br/>
+<br/>
 
+* Choosing the SSH executable
+  * Use bundled OpenSSH  
+    Git に付属の ssh.exe を使用
+<br/>
 
+* Choosing HTTPS transport backend  
+  Git の HTTPS 接続に使う SSL/TLS ライブラリ
+  <br/>
+  * Use the Open SSL library  
+    サーバ証明書は、ca-bundle.crt ファイルを使って認証
+<br/>
 
+* Configuring the line ending conversations  
+  改行文字の設定
+  <br/>
+  * Checkout as-is, commit as-is  
+    テキストファイルのチェックアウトやコミットの際に、改行文字の変換を行わない  
+    "core.autocrlf false" の設定
+<br/>
 
+* Configuring the terminal emulator to use with Git Bash  
+  Git Bash で使う端末エミュレータの設定
+  <br/>
+  * Use MinTTY (the default terminal of MSYS2)  
+    MinTTY（MSYS2 のデフォルト端末）を使う
+<br/>
+
+* Choose the default behavior of 'git pull'  
+  'git pull' のデフォルトの動作を選択する
+  <br/>
+  * Only ever fast-forward  
+    Fast-forward のみ  
+    これは 'git pull' の標準的な動作
+<br/>
+
+* Choose a credential helper  
+  資格情報ヘルパーの選択
+  <br/>
+  * [Git Credential Manager](https://docs.github.com/ja/get-started/getting-started-with-git/caching-your-github-credentials-in-git)  
+    Git 資格情報マネージャー
+<br/>
+
+* Configuring extra options  
+  追加オプションの設定
+  <br/>
+  * Enable file system caching  
+    ファイルシステムのキャッシュを有効にする
 
 ## 1. Dockerのインストール
 ## 2. .devcontainer上に'devcontainer.json', 'Dockerfile', 'requirements.txt'を用意する
