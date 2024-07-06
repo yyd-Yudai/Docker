@@ -20,7 +20,7 @@ VSCode 本体のインストール：
 * Japanese Language Pack for Visual Studio Code
     日本語化のため
 * WSL
-  WSL 環境に接続するため
+    WSL 環境に接続するため
 
 
 ## 1. Dockerのインストール
