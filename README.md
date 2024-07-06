@@ -1,5 +1,5 @@
 # Windows Terminal
-*aaa
+・aaa
 
 
 
