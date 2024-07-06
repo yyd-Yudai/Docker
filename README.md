@@ -4,7 +4,7 @@
 * <https://www.youtube.com/watch?v=6kCZJLZBVpQ>
 
 ## 1. Windows Terminal
-* Windows Terminal(https://apps.microsoft.com/detail/9n0dx20hk701?hl=ja-jp&gl=JP)
+* [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=ja-jp&gl=JP)
 ## 1. Dockerのインストール
 ## 2. .devcontainer上に'devcontainer.json', 'Dockerfile', 'requirements.txt'を用意する
 ## 3. 
