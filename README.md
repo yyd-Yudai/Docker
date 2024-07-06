@@ -4,7 +4,13 @@
 * <https://www.youtube.com/watch?v=6kCZJLZBVpQ>
 
 ## 1. Windows Terminal
-* [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=ja-jp&gl=JP)
+* [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=ja-jp&gl=JP)アプリで PowerShell の起動確認
+* ない場合は Microsoft Store で入手
+
+## 2. Visual Studio Code
+VSCode 本体のインストール：
+* これは普通のテキストです。<a href="https://example.com" style="text-decoration: underline;">ここをクリック</a>すると外部リンクに飛びます。
+
 ## 1. Dockerのインストール
 ## 2. .devcontainer上に'devcontainer.json', 'Dockerfile', 'requirements.txt'を用意する
 ## 3. 
