@@ -1,4 +1,7 @@
-# Docker
+# Windows Terminal
+\aaa
+
+
 
 ## 1. Dockerのインストール
 ## 2. .devcontainer上に'devcontainer.json', 'Dockerfile', 'requirements.txt'を用意する
