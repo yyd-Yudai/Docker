@@ -31,7 +31,7 @@ WSL Ubuntu に直接 GCM をインストールすることもできるが、Micr
 
 ### 3.2. インストールウィザード
 * Select Components
-  * Windows Explorer integration : OFF（任意）
+  * Windows Explorer integration : OFF（任意）  
     右クリックのコンテキストメニューに追加される
   * Check dialy for Git for Windows updates : ON（推奨）
   * Add a Git Bash Profile to Windows Terminal : ON（推奨）
