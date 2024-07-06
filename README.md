@@ -12,7 +12,7 @@ VSCode 本体のインストール：
 * [Visual Studio Code](https://code.visualstudio.com/) 公式サイトからインストーラをダウンロード
   （Microsoft Store から入手でも可）
 * VSCode のインストール
-  * オプションはデフォルトのまま
+ * オプションはデフォルトのまま
 * VSCode をスタートやタスクバーにピン留め（任意）
 
 
